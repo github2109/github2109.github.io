@@ -23,10 +23,9 @@
 -->
         </style>
 </head>
-    <body>
-        <audio autoplay loop>
-					<source src="music/y2mate.com - Maggie Lindemann - Pretty Girl (Lyrics) Cheat Codes x Cade Remix_jQllZte7S_s_320kbps.mp3" type="audio/mp3" />
-			</audio>  
+    <body>  
+            <audio id="demo" src="music/y2mate.com - Maggie Lindemann - Pretty Girl (Lyrics) Cheat Codes x Cade Remix_jQllZte7S_s_320kbps.mp3"></audio>
+
         <div class="col-sm-8 col-md-7 py-4 ">
         <div id="main">
             <div id="error">Trình duyệt của bạn không được hỗ trợ. Để được hỗ trợ liên hệ quanghiep2109@gmail.com. Hoặc sử dụng (<a href="http://www.google.cn/chrome">Chrome</a>) và (<a href="http://firefox.com/download/">Firefox</a>)</div>
@@ -114,6 +113,7 @@
         var hold = 1;
 
         canvas.click(function(e) {
+            document.getElementById('demo').play()
             var offset = canvas.offset(), x, y;
             x = e.pageX - offset.left;
             y = e.pageY - offset.top;
